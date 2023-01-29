@@ -4,6 +4,8 @@ local Window = Library.CreateLib("Charmed", "Ocean")
 -- Unlocker
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
+local S = Window:NewTab("Others")
+Local s = Main:NewSection("Misc")
 
 MainSection:NewButton("Temporal Status", "Z", function()
      game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
@@ -34,7 +36,7 @@ end)
 
 MainSection:NewButton("Energy Wave", "C", function()
     game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
-        if key == "c" then
+        if key == "C" then
             local args = {
                 [1] = "Energy Waves"
             }
@@ -95,15 +97,93 @@ MainSection:NewButton("Summon Max", "ButtonInfo", function()
 end)
 
 
-MainSection:NewLabel("Misc")
+MainSection:NewButton("Summon All", "ButtonInfo", function()
+    local args = {
+        [1] = "Summoning",
+        [2] = "Max"
+    }
+    
+    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+    local args = {
+        [1] = "Summoning",
+        [2] = "Wyatt"
+    }
+    
+    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+    local args = {
+        [1] = "Summoning",
+        [2] = "Piper"
+    }
+    
+    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+    local args = {
+        [1] = "Summoning",
+        [2] = "Prue"
+    }
+    
+    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+    local args = {
+        [1] = "Summoning",
+        [2] = "Phoebe"
+    }
+    
+    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+    local args = {
+        [1] = "Summoning",
+        [2] = "Cole"
+    }
+    
+    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+    local args = {
+        [1] = "Summoning",
+        [2] = "Name"
+    }
+    
+    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+end)
 
 
-MainSection:NewButton("All Gamepasses", "Ccccocksucker", function()
+s:NewButton("All Gamepasses", "CCock", function()
     game.Players.LocalPlayer.UserId = "367045117"
 end)
 
 
-MainSection:NewButton("Infinite Yield", "Ccccocksucker", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+s:NewButton("Infinite Yield", "CCock", function()
+    loadstring(game:HttpGet('https://pastebin.com/ZH0zj8BC'))()
+end)
 
+
+MainSection:NewLabel("Misc")
+
+
+MainSection:NewButton("Infinite Yield", "Ccockbitch", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+
+MainSection:NewButton("All Gamepasses", "Ccockbitch", function()
+    game.Players.LocalPlayer.UserId = "367045117"
+end)
+
+
+MainSection:NewLabel("Shield")
+
+
+MainSection:NewButton("Orb Shield On", "Ccockbitch", function()
+    local args = {
+        [1] = "OrbShield"
+    }
+    
+    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+    
+end)
+
+
+MainSection:NewButton("Orb Shield Off", "Ccockbitch", function()
+    local args = {
+        [1] = "OrbShieldOff"
+    }
+    
+    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+    
 end)
