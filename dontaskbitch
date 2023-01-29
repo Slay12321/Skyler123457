@@ -1,11 +1,9 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Charmed", "Ocean")
+local Window = Library.CreateLib("Charmed | Noah*#750", "Ocean")
 
 -- Unlocker
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
-local S = Window:NewTab("Others")
-Local s = Main:NewSection("Misc")
 
 MainSection:NewButton("Temporal Status", "Z", function()
      game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
@@ -36,7 +34,7 @@ end)
 
 MainSection:NewButton("Energy Wave", "C", function()
     game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
-        if key == "C" then
+        if key == "c" then
             local args = {
                 [1] = "Energy Waves"
             }
@@ -45,6 +43,9 @@ MainSection:NewButton("Energy Wave", "C", function()
         end
        end)
 end)
+
+
+MainSection:NewLabel("Summoning")
 
 
 MainSection:NewButton("Summon Piper", "Slay", function()
@@ -61,6 +62,16 @@ MainSection:NewButton("Summon Paige", "Slay", function()
     local args = {
         [1] = "Summoning",
         [2] = "Paige"
+    }
+    
+    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+end)
+
+
+MainSection:NewButton("Summon Piper", "Slay", function()
+    local args = {
+        [1] = "Summoning",
+        [2] = "Prue"
     }
     
     game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
@@ -97,93 +108,49 @@ MainSection:NewButton("Summon Max", "ButtonInfo", function()
 end)
 
 
-MainSection:NewButton("Summon All", "ButtonInfo", function()
+MainSection:NewButton("Summon Source", "Slay", function()
     local args = {
         [1] = "Summoning",
-        [2] = "Max"
+        [2] = "Source"
     }
     
     game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
-    local args = {
-        [1] = "Summoning",
-        [2] = "Wyatt"
-    }
-    
-    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
-    local args = {
-        [1] = "Summoning",
-        [2] = "Piper"
-    }
-    
-    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
-    local args = {
-        [1] = "Summoning",
-        [2] = "Prue"
-    }
-    
-    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
-    local args = {
-        [1] = "Summoning",
-        [2] = "Phoebe"
-    }
-    
-    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
-    local args = {
-        [1] = "Summoning",
-        [2] = "Cole"
-    }
-    
-    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
-    local args = {
-        [1] = "Summoning",
-        [2] = "Name"
-    }
-    
-    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
-end)
-
-
-s:NewButton("All Gamepasses", "CCock", function()
-    game.Players.LocalPlayer.UserId = "367045117"
-end)
-
-
-s:NewButton("Infinite Yield", "CCock", function()
-    loadstring(game:HttpGet('https://pastebin.com/ZH0zj8BC'))()
 end)
 
 
 MainSection:NewLabel("Misc")
 
 
-MainSection:NewButton("Infinite Yield", "Ccockbitch", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+MainSection:NewButton("All Gamepasses", "Ccccocksucker", function()
+    game.Players.LocalPlayer.UserId = "367045117"
 end)
 
 
-MainSection:NewButton("All Gamepasses", "Ccockbitch", function()
-    game.Players.LocalPlayer.UserId = "367045117"
+MainSection:NewButton("Infinite Yield", "Ccccocksucker", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
 end)
 
 
 MainSection:NewLabel("Shield")
 
 
-MainSection:NewButton("Orb Shield On", "Ccockbitch", function()
+MainSection:NewButton("Shield On", "Ccccocksucker", function()
     local args = {
-        [1] = "OrbShield"
-    }
-    
-    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
-    
+    [1] = "OrbShield"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
 end)
 
 
-MainSection:NewButton("Orb Shield Off", "Ccockbitch", function()
+MainSection:NewButton("Shield Off", "Ccccocksucker", function()
     local args = {
-        [1] = "OrbShieldOff"
-    }
-    
-    game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
-    
+    [1] = "OrbShieldOff"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
 end)
